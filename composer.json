@@ -1,5 +1,5 @@
 {
-    "name": "laravel/laravel",
+    "name": "ravelino/wesender-laravel",
     "type": "package",
     "description": "A Laravel package for notifying via Wesender api.",
     "keywords": ["laravel", "php","wesender", "notification", "sms"],
