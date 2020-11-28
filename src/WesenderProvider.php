@@ -15,9 +15,7 @@ class WesenderProvider extends ServiceProvider implements DeferrableProvider
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/../config/wesender.php' => config_path('wesender.php'),
-        ]);
+		
     }
 
     /**
