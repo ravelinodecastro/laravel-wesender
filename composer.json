@@ -1,0 +1,55 @@
+{
+    "name": "laravel/laravel",
+    "type": "package",
+    "description": "A Laravel package for notifying via Wesender api.",
+    "keywords": ["laravel", "php","wesender", "notification", "sms"],
+    "support": {
+        "issues": "https://github.com/ravelinodecastro/wesender-laravel/issues",
+        "source": "https://github.com/ravelinodecastro/wesender-laravel"
+    },
+    "authors": [
+        {
+            "name": "Ravelino de Castro",
+            "email": "ravelinodecastro@gmail.com",
+            "homepage": "https://github.com/ravelinodecastro",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/notifications": "^5.8 || ^6.0 || ^7.0 || ^8.0",
+        "illuminate/support": "^5.8 || ^6.0 || ^7.0 || ^8.0",
+        "illuminate/events": "^5.8 || ^6.0 || ^7.0 || ^8.0",
+        "illuminate/queue": "^5.8 || ^6.0 || ^7.0 || ^8.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.4.2",
+        "phpunit/phpunit": "^9.3.3"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ravelino\\Wesender\\WesenderProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Ravelino\\Wesender\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ravelino\\Wesender\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test:unit": "phpunit --verbose --testsuite Unit",
+        "test:integration": "phpunit --verbose --testsuite Integration"
+    }
+}
