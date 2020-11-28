@@ -1,11 +1,11 @@
 {
-    "name": "ravelino/wesender-laravel",
+    "name": "ravelino/laravel-wesender",
     "type": "package",
     "description": "A Laravel package for notifying via Wesender api.",
     "keywords": ["laravel", "php","wesender", "notification", "sms"],
     "support": {
-        "issues": "https://github.com/ravelinodecastro/wesender-laravel/issues",
-        "source": "https://github.com/ravelinodecastro/wesender-laravel"
+        "issues": "https://github.com/ravelinodecastro/laravel-wesender/issues",
+        "source": "https://github.com/ravelinodecastro/laravel-wesender"
     },
     "authors": [
         {
